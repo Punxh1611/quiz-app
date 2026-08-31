@@ -1,0 +1,13 @@
+import { useContext, useState } from "react";
+import { DataContext } from "../App";
+
+const Menu = ()=>{
+    const {setAppState} = useContext(DataContext)
+    return(
+        <div className="menu">
+            <h1>Menu component</h1>
+            <button onClick={()=>setAppState("quiz")}>start</button>
+        </div>
+    )
+}
+export default Menu;
